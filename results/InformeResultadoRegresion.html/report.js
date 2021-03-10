@@ -58,11 +58,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "verifica la respuesta del servicio de compra de album",
@@ -85,7 +83,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioPostConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar el status code \u0027201\u0027 de la operacion del \"proceso de compra de album.\"",
@@ -95,8 +93,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c401\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat Naiofy.com.co.stepdefinition.ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(ConsumoServicioStepDefinitions.java:47)\r\n\tat ✽.debera retornar el status code \u0027201\u0027 de la operacion del \"proceso de compra de album.\"(src/test/resources/feactures/ComprarAlbum.feature:18)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "se consume el servicio Get con url \"https://nodejs-qa-training.herokuapp.com/users/147/albums\" y endpoind \"./templates/Vacio.json\"",
@@ -177,11 +174,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "verifica la respuesta del servicio de compra  para validar que no se permita la compra de un album que ya fue comprado",
@@ -204,7 +199,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioPostConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar un status code totalmente diferente a \u0027201\u0027 de la operacion del \"Compra de album\"",
@@ -214,7 +209,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarUnStatusCodeTotalmenteDiferenteADeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.uri("src/test/resources/feactures/ConsultaListas.feature");
 formatter.feature({
@@ -276,11 +271,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "verifica la respuesta del servicio de consulta para conocer el listado de usuarios",
@@ -303,7 +296,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioGetConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar el status code \u0027200\u0027 de la operacion del \"proceso de Consulta lista de usuarios.\"",
@@ -313,7 +306,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debe retornar el body de respuesta con el formato correcto",
@@ -323,15 +316,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "se deben observar usuarios de tipo admin y usuarios regulares",
-  "keyword": "Y "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.background({
   "name": "Loguearse para generar Token",
@@ -382,11 +367,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "verifica la respuesta del servicio de consulta para conocer el listado de albumes",
@@ -409,7 +392,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioGetConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar el status code \u0027200\u0027 de la operacion del \"proceso de Consulta lista de albumes.\"",
@@ -419,7 +402,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debe retornar el body de respuesta con el formato correcto",
@@ -429,7 +412,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "name": "Loguearse para generar Token",
@@ -480,11 +463,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "Verifica la respuesta del servicio de consulta exitosa de listado de fotos por album",
@@ -507,7 +488,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioGetConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar el status code \u0027200\u0027 de la operacion del \"proceso de Consulta de lista de fotos por album\"",
@@ -517,7 +498,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debe retornar el body de respuesta con el formato correcto",
@@ -527,7 +508,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "name": "Loguearse para generar Token",
@@ -578,11 +559,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "Verifica la respuesta del servicio de consulta de listado de fotos de un album no existente",
@@ -605,7 +584,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioGetConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar un status code totalmente diferente a \u0027200\u0027 de la operacion del \"proceso de Consulta de lista de fotos por album\"",
@@ -615,7 +594,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarUnStatusCodeTotalmenteDiferenteADeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debe retornar el body de respuesta con el formato correcto",
@@ -625,7 +604,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "name": "Loguearse para generar Token",
@@ -676,11 +655,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "Verifica la respuesta del servicio de consulta de albumes comprados por usuario",
@@ -703,7 +680,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioGetConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar el status code \u0027200\u0027 de la operacion del \"proceso de Consulta albumes comprados\"",
@@ -713,7 +690,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debe retornar el body de respuesta con el formato correcto",
@@ -723,7 +700,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "name": "Loguearse para generar Token",
@@ -774,11 +751,9 @@ formatter.step({
   "name": "el endpoint de respuesta debe devolver  el user_id",
   "keyword": "Y "
 });
-formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
   "name": "Verifica la respuesta del servicio de consulta de albumes comprados usuario no existente",
@@ -801,7 +776,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.seConsumeElServicioGetConUrlYEndpoind(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debera retornar un status code totalmente diferente a \u0027200\u0027 de la operacion del \"proceso de Consulta albumes comprados\"",
@@ -811,7 +786,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarUnStatusCodeTotalmenteDiferenteADeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "debe retornar el body de respuesta con el formato correcto",
@@ -821,7 +796,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.uri("src/test/resources/feactures/Login.feature");
 formatter.feature({
@@ -888,11 +863,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "el endpoint de respuesta debe devolver  el user_id",
+  "name": "el endpoint de respuesta debe devolver \"user_id\" y no debe ser null",
   "keyword": "Y "
 });
 formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
+  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverYNoDebeSerNull(String)"
 });
 formatter.result({
   "status": "passed"
@@ -951,11 +926,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "el endpoint de respuesta debe devolver  el user_id",
+  "name": "el endpoint de respuesta debe devolver \"user_id\" y no debe ser null",
   "keyword": "Y "
 });
 formatter.match({
-  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverElUser_id()"
+  "location": "ConsumoServicioStepDefinitions.elEndpointDeRespuestaDebeDevolverYNoDebeSerNull(String)"
 });
 formatter.result({
   "status": "passed"
@@ -1174,7 +1149,7 @@ formatter.match({
   "location": "ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(int,String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c422\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat Naiofy.com.co.stepdefinition.ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(ConsumoServicioStepDefinitions.java:47)\r\n\tat ✽.debera retornar el status code \u0027201\u0027 de la operacion del \"Registo\"(src/test/resources/feactures/Registro.feature:11)\r\n",
+  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c422\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat Naiofy.com.co.stepdefinition.ConsumoServicioStepDefinitions.deberaRetornarElStatusCodeDeLaOperacionDel(ConsumoServicioStepDefinitions.java:47)\r\n\tat ✽.debera retornar el status code \u0027201\u0027 de la operacion del \"Registo\"(src/test/resources/feactures/Registro.feature:11)\r\n",
   "status": "failed"
 });
 formatter.step({
@@ -1264,14 +1239,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "debe retornar el body de respuesta con el formato correcto",
+  "name": "debera retornar el mensaje  \"The email must be @wolox.com.ar. Password format invalid. Password must be at least 8 characters\"",
   "keyword": "Y "
 });
 formatter.match({
-  "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
+  "location": "ConsumoServicioStepDefinitions.deberaRetornarElMensaje(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: 1 expectation failed.\nJSON path errors.message doesn\u0027t match.\nExpected: is \"The email must be @wolox.com.ar. Password format invalid. Password must be at least 8 characters\"\n  Actual: \u003c[The email must be @wolox.com.ar. Password format invalid. Password must be at least 8 characters]\u003e\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)\r\n\tat io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)\r\n\tat Naiofy.com.co.stepdefinition.ConsumoServicioStepDefinitions.deberaRetornarElMensaje(ConsumoServicioStepDefinitions.java:73)\r\n\tat ✽.debera retornar el mensaje  \"The email must be @wolox.com.ar. Password format invalid. Password must be at least 8 characters\"(src/test/resources/feactures/Registro.feature:24)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "name": "Registrar un usuario regular con datos vacios",
@@ -1316,4 +1292,57 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Registrar un usuario regular  con formatos de datos incorrectos, email de dominio diferente a \"@wolox.com.ar\"",
+  "description": "",
+  "keyword": "Escenario",
+  "tags": [
+    {
+      "name": "@Registro"
+    },
+    {
+      "name": "@RegistroUsuarioEmailDominioIncorrecto"
+    }
+  ]
+});
+formatter.step({
+  "name": "se consume el servicio Post con url \"https://nodejs-qa-training.herokuapp.com/users\" y endpoind \"./templates/PostRegistroEmailIncorrecto.json\"",
+  "keyword": "Cuando "
+});
+formatter.match({
+  "location": "ConsumoServicioStepDefinitions.seConsumeElServicioPostConUrlYEndpoind(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "debera retornar un status code totalmente diferente a \u0027201\u0027 de la operacion del \"Registo\"",
+  "keyword": "Entonces "
+});
+formatter.match({
+  "location": "ConsumoServicioStepDefinitions.deberaRetornarUnStatusCodeTotalmenteDiferenteADeLaOperacionDel(int,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "debe retornar el body de respuesta con el formato correcto",
+  "keyword": "Y "
+});
+formatter.match({
+  "location": "ConsumoServicioStepDefinitions.debeRetornarElBodyDeRespuestaConElFormatoCorrecto()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "debera retornar el mensaje  \"The email must be @wolox.com.ar\"",
+  "keyword": "Y "
+});
+formatter.match({
+  "location": "ConsumoServicioStepDefinitions.deberaRetornarElMensaje(String)"
+});
+formatter.result({
+  "error_message": "java.lang.AssertionError: 1 expectation failed.\nJSON path errors.message doesn\u0027t match.\nExpected: is \"The email must be @wolox.com.ar\"\n  Actual: \u003c[The email must be @wolox.com.ar]\u003e\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)\r\n\tat io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)\r\n\tat Naiofy.com.co.stepdefinition.ConsumoServicioStepDefinitions.deberaRetornarElMensaje(ConsumoServicioStepDefinitions.java:73)\r\n\tat ✽.debera retornar el mensaje  \"The email must be @wolox.com.ar\"(src/test/resources/feactures/Registro.feature:37)\r\n",
+  "status": "failed"
 });
