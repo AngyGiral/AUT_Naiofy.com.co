@@ -14,13 +14,10 @@ import io.restassured.http.ContentType;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
-
-
 public class ConsumoServicioStepDefinitions {
 	public Response  Respuesta;	
 	Autorizacion autorizacion = new Autorizacion();
 	int statusCode;
-
 
 	@Cuando("^se consume el servicio Post con url \"([^\"]*)\" y endpoind \"([^\"]*)\"$")
 	public void seConsumeElServicioPostConUrlYEndpoind(String url, String enpoind) {
@@ -76,14 +73,29 @@ public class ConsumoServicioStepDefinitions {
 				containsString("first_page_link"),containsString("last_page_link"),containsString("n_page_link"));
 	}
 	
+	@Entonces("^debe retornar una respuesta con el Json en formato correcto para la consulta de Albumes$")
+	public void debeRetornarUnaRespuestaConElJsonEnFormatoCorrectoParaLaConsultaDeAlbumes() {
+		Respuesta.then().body(containsString("user_id"),containsString("id"),containsString("title"));
+	}
+
+	@Entonces("^debe retornar una respuesta con formato correcto para la consulta de photos$")
+	public void debeRetornarUnaRespuestaConFormatoCorrectoParaLaConsultaDePhotos() {
+		Respuesta.then().body(containsString("album_id"),containsString("id"),containsString("title"),containsString("url"),containsString("thumbnail_url"));
+	}
+	
 	@Entonces("^debe retornar el formato de respuesta correcto para errores$")
 	public void debeRetornarElFormatoDeRespuestaCorrectoParaErrores() {
 		Respuesta.then().body(containsString("errors"),containsString("code"),containsString("message"),
-				containsString("origin"),containsString("stack_trace"),containsString("timestamp"));
+				containsString("origin"),containsString("stack_trace"),containsString("timestamp")).and().body("message",is(notNullValue()));;
 	}
 	
 	@Entonces("^debera retornar el mensaje  \"([^\"]*)\"$")
 	public void deberaRetornarElMensaje(String mensaje) {
 		Respuesta.then().body("errors.message",containsString(mensaje));
+	}
+	
+	@Entonces("^debe retornar un Json de respuesta con el formato correcto por compras de album$")
+	public void debeRetornarUnJsonDeRespuestaConElFormatoCorrectoPorComprasDeAlbum() {
+		Respuesta.then().body(containsString("user_id"),containsString("album"),containsString("title"),containsString("created_at"));
 	}
 }

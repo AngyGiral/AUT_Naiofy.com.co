@@ -10,7 +10,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions(
 		features = {"src/test/resources/feactures"},
 		glue = {"Naiofy.com.co.stepdefinition"},
-		tags= { "@ComprarAlbum"},
+		tags= {"@ComprarAlbum"},
 		snippets =SnippetType.CAMELCASE,
 		
 	plugin= {"pretty","html:results/InformeResultadoConsultas.html"},

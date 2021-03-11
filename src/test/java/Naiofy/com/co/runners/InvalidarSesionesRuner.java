@@ -1,6 +1,7 @@
 package Naiofy.com.co.runners;
 
 import org.junit.runner.RunWith;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
@@ -9,12 +10,13 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions(
 	features = {"src/test/resources/feactures"},
 	glue = {"Naiofy.com.co.stepdefinition"},
-	tags= { "@Registro,@login,@Consultas,@ComprarAlbum,@Invalidarsesion"},
+	tags= { "@Invalidarsesion"},
 	snippets =SnippetType.CAMELCASE,
 	
-plugin= {"pretty","html:results/InformeResultadoRegresion.html"},
+plugin= {"pretty","html:results/InformeResultadosInvalidarSesiones.html"},
 monochrome=true)
 
-public class RegresionRuner {
+public class InvalidarSesionesRuner {
 
 }
+

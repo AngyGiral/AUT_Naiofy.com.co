@@ -29,13 +29,13 @@ Característica: Validar la consultas de la lista de usuarios naiofy
    Escenario: verifica la respuesta del servicio de consulta para conocer el listado de albumes
     Cuando se consume el servicio Get con url "https://nodejs-qa-training.herokuapp.com/albums" y endpoind "./templates/Vacio.json"
     Entonces debera retornar el status code '200' de la operacion del "proceso de Consulta lista de albumes."
-    Y debe retornar una respuesta
-
+    Y debe retornar una respuesta con el Json en formato correcto para la consulta de Albumes
+    
   @ConsultaExitosaListadoFotosAlbum
   Escenario: Verifica la respuesta del servicio de consulta exitosa de listado de fotos por album
    Cuando se consume el servicio Get con url "https://nodejs-qa-training.herokuapp.com/albums/3/photos" y endpoind "./templates/Vacio.json"
    Entonces debera retornar el status code '200' de la operacion del "proceso de Consulta de lista de fotos por album"
-    Y debe retornar una respuesta
+    Y debe retornar una respuesta con formato correcto para la consulta de photos
    
   @ConsultaListadoFotosAlbumNoExistente
   Escenario: Verifica la respuesta del servicio de consulta de listado de fotos de un album no existente
@@ -54,6 +54,7 @@ Característica: Validar la consultas de la lista de usuarios naiofy
    Cuando se consume el servicio Get con url "https://nodejs-qa-training.herokuapp.com/users/1000/albums" y endpoind "./templates/Vacio.json"
    Entonces debera retornar el status code '403' de la operacion del "proceso de Consulta albumes comprados"
    Y debe retornar una respuesta
+    
    
   
  

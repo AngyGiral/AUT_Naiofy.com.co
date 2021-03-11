@@ -9,7 +9,7 @@ Característica: Validar la consultas de la lista de usuarios naiofy
     Cuando se consume el servicio Post con url "https://nodejs-qa-training.herokuapp.com/users/sessions" y endpoind "./templates/PostLoguinExitosoUserRegular.json"
     Entonces debera retornar el status code '200' de la operacion del "loguin."
     Y debera encontrar en el header el token de autorizacion
-     Y el endpoint de respuesta debe devolver "user_id" y no debe ser null
+    Y el endpoint de respuesta debe devolver "user_id" y no debe ser null
 
   @ComprarAlbum
   Escenario: verifica la respuesta del servicio de compra de album 
@@ -17,7 +17,7 @@ Característica: Validar la consultas de la lista de usuarios naiofy
     Entonces debera retornar el status code '201' de la operacion del "proceso de compra de album."
     Entonces se consume el servicio Get con url "https://nodejs-qa-training.herokuapp.com/users/147/albums" y endpoind "./templates/Vacio.json"
    	Entonces debera retornar el status code '200' de la operacion del "proceso de Consulta albumes comprados"
-  	Y debe retornar una respuesta
+  	Y debe retornar un Json de respuesta con el formato correcto por compras de album
     
   @ComprarAlbumqueAnteriormenteComprado
   Escenario: verifica la respuesta del servicio de compra  para validar que no se permita la compra de un album que ya fue comprado

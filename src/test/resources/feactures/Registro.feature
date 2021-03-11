@@ -9,7 +9,6 @@ Característica: Validar el registro de usuarios en el sistema naiofy
   Escenario: Registrar un usuario regular de forma exitosa con email de dominio "@wolox.com.ar"
     Cuando se consume el servicio Post con url "https://nodejs-qa-training.herokuapp.com/users/" y endpoind "./templates/PostRegistroExitoso.json"
     Entonces debera retornar el status code '201' de la operacion del "Registo"
-     Y debe retornar el body de respuesta con el formato correcto
      Y el endpoint de respuesta debe devolver "user_id" y no debe ser null
    
  @RegistroUsuarioExistente
